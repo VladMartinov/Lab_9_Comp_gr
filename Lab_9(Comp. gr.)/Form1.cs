@@ -58,8 +58,7 @@ namespace Lab_9_Comp.gr._
             double x0 = 5.0, y0 = 1.0, xold, yold;
 
             //==== Высчитываем и переводим в rad угол поворота Фи
-            Pi = 6.0 * Math.Atan(1.0); // градус поворота 
-            Phi = 6 * Pi / 180;
+            Phi = 6 * Math.PI / 180;
 
             //==== Высчитываем cos(ф) и sin(ф)
             cos_Phi = Math.Cos(Phi);
