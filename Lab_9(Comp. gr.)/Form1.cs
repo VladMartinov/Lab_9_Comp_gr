@@ -26,14 +26,14 @@ namespace Lab_9_Comp.gr._
         //==== Преобразовываем вещественную координату X в целую (масштабируем)
         private int IX(double x)
         {
-            double xx = x * (mainPictureBox.Size.Width / 23.0) + 0.5;
+            double xx = x * (mainPictureBox.Size.Width / 25.0) + 0.5;
             return (int)xx;
         }
 
         //==== Преобразовываем вещественную координату Y в целую (масштабируем)
         private int IY(double y)
         {
-            double yy = mainPictureBox.Size.Height - y * (mainPictureBox.Size.Height / 16.0) + 0.5;
+            double yy = mainPictureBox.Size.Height - y * (mainPictureBox.Size.Height / 18.0) + 0.5;
             return (int)yy;
         }
 
@@ -55,10 +55,10 @@ namespace Lab_9_Comp.gr._
             int i, j;
             double Pi, Phi, cos_Phi, sin_Phi, dx, dy;
 
-            double x0 = 11.5, y0 = 7.25, xold, yold;
+            double x0 = 5.0, y0 = 1.0, xold, yold;
 
             //==== Высчитываем и переводим в rad угол поворота Фи
-            Pi = 5.0 * Math.Atan(1.0); // Math.PI
+            Pi = 6.0 * Math.Atan(1.0); // градус поворота 
             Phi = 6 * Pi / 180;
 
             //==== Высчитываем cos(ф) и sin(ф)
